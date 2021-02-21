@@ -311,7 +311,7 @@ l to box height, or 187% */
   background-color: var(--hero-bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
-  background-position: cneter;
+  background-position: center;
   background-size: cover;
 }
 
@@ -429,7 +429,7 @@ l to box height, or 187% */
 .what-we-do-description {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1,142;
+  line-height: 1.142;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -618,7 +618,7 @@ l to box height, or 187% */
   padding: 10px 28px;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1,875;
+  line-height: 1.875;
   /* identical to box height, or 187% */
   /* text-align: center; */
   letter-spacing: 0.06em;
@@ -705,7 +705,7 @@ l to box height, or 187% */
   border-radius: 4px;
   background-color: transparent;
   font-size: 16px;
-  line-height: 1,25;
+  line-height: 1.25;
   /* identical to box height, or 125% */
   letter-spacing: 0.03em;
   color: var(--bg-color);
@@ -809,7 +809,7 @@ l to box height, or 187% */
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 1,166;
+  line-height: 1.166;
   /* identical to box height */
   letter-spacing: 0.01em;
   color: var(--font-color);
@@ -947,7 +947,7 @@ l to box height, or 187% */
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1,15;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--subtitle-font-color);
