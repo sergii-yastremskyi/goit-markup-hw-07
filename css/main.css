@@ -237,12 +237,7 @@ l to box height, or 187% */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-list-link:hover, .navigation-list-link:focus, .navigation-list-link.current, .navigation-list-link.current::after {
-  color: var(--accent-color);
-  fill: currentColor;
-}
-
-.navigation-list-link .current::after {
+.navigation-list-link::after {
   position: absolute;
   bottom: -1px;
   content: "";
@@ -254,6 +249,26 @@ l to box height, or 187% */
   transition-property: background-color;
   transition-duration: 250ms;
   background-color: transparent;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link:hover, .navigation-list-link:focus, .navigation-list-link.current {
+  color: var(--accent-color);
+  fill: currentColor;
+}
+
+.navigation-list-link.current::after {
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  background-color: var(--accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

@@ -33,12 +33,8 @@
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-       &:hover, &:focus, &.current, &.current::after {
-           color: var(--accent-color); 
-            fill: currentColor; 
-       }
-       .current::after {
-          position: absolute;
+       &::after {
+           position: absolute;
           bottom: -1px;
           content: "";
           display: block;
@@ -50,6 +46,25 @@
           transition-property: background-color;
           transition-duration: 250ms;
           background-color: transparent;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       }
+        &:hover, &:focus, &.current, {
+           color: var(--accent-color); 
+            fill: currentColor; 
+       }
+       &.current::after {
+          position: absolute;
+          bottom: -1px;
+          content: "";
+          display: block;
+          width: 100%;
+          height: 4px;
+          border-radius: 2px;
+    
+          background-color: var(--accent-color);  
+          transition-property: background-color;
+          transition-duration: 250ms;
+          background-color: var(--accent-color);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
          }
 
